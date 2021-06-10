@@ -72,7 +72,7 @@ input {
   font-size: 0.87rem;
 }
 .guest-info {
-  width: 420px;
+  width: 100%;
   /* border: 1px solid red; */
   margin-top: 2.5rem;
   color: rgba(0, 0, 0, 0.55);
