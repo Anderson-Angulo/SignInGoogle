@@ -16,45 +16,49 @@ a {
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Open Sans", sans-serif;
+  height: 100vh;
 }
+
 .content-wrapper {
-  width: 80%;
-  height: auto;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .card {
   width: 100%;
-  border: 1px solid rgba(80, 79, 79, 0.21);
+  /* border: 1px solid rgba(80, 79, 79, 0.21);
   border-radius: 12px;
   box-shadow: 0 0 0 1px rgba(80, 79, 79, 0.1);
-  padding: 2.5rem;
+  padding: 2.5rem; */
 }
 
 .card-header {
-  height: 8em;
+  height: 12em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 2.2em;
+  margin-bottom: 3.5em;
 }
 
 img {
-  width: 7em;
-  margin-bottom: 1em;
+  width: 7.4em;
+  margin: 1.3em 0;
 }
 h2 {
-  font-size: 1.6em;
+  font-size: 2.4em;
   font-weight: 400;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.8rem;
 }
 .go-gmail {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 form {
@@ -62,7 +66,7 @@ form {
   flex-direction: column;
 }
 input {
-  font-size: 1.2em;
+  font-size: 1.6em;
   padding: 0.9em 0.8em;
   border-radius: 5px;
   outline: none;
@@ -72,13 +76,13 @@ input {
 }
 
 .forget {
-  font-size: 0.95em;
+  font-size: 1.3em;
 }
 .guest-info {
   width: 100%;
   margin-top: 2.5em;
   color: rgba(0, 0, 0, 0.55);
-  font-size: 1em;
+  font-size: 1.3em;
   line-height: 1.5em;
   font-weight: 600;
 }
@@ -89,8 +93,8 @@ input {
   margin-top: 3em;
 }
 .btn {
-  font-size: 1em;
-  padding: 1.1em 2.4em;
+  font-size: 1.4em;
+  padding: 0.8em 2em;
   cursor: pointer;
   outline: none;
   border: none;
@@ -109,6 +113,8 @@ input {
   box-shadow: 0 1px 0 1px rgba(80, 79, 79, 0.4);
 }
 .secondary {
+  padding-left: 0;
+  padding-right: 0;
   background: transparent;
   transition: background 0.3s;
 }
@@ -121,20 +127,58 @@ input {
   display: flex;
   height: 4em;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 0.7em;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.1em;
 }
 .other_options {
-  width: 22em;
+  width: 20em;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 .footer a {
+  font-size: 1em;
   color: rgba(0, 0, 0, 0.55);
+  font-weight: bold;
+}
+.footer > a {
+  color: rgba(0, 0, 0, 0.65);
 }
 i {
   color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: 100%;
+    border: 1px solid rgba(80, 79, 79, 0.21);
+    border-radius: 12px;
+    box-shadow: 0 0 0 1px rgba(80, 79, 79, 0.1);
+    padding: 2.5rem;
+  }
+  .content-wrapper {
+    width: 75%;
+    max-width: 450px;
+    height: auto;
+  }
+  .footer {
+    display: flex;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 1025px) {
+  :root {
+    font-size: 55%;
+  }
+  .content-wrapper {
+    max-width: 380px;
+  }
 }
 /*
 .alert {
