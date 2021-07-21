@@ -1,4 +1,5 @@
 const db=firebase.firestore()
+
 const contentWrapper=document.querySelector('.content-wrapper')
 
 const form=document.getElementById('form-sign')
