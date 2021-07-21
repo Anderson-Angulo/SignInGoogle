@@ -7,7 +7,7 @@
 }
 :root {
   --ancleColor: #2e7adf;
-  font-size: 100%;
+  font-size: 62.5%;
 }
 a {
   text-decoration: none;
@@ -16,19 +16,17 @@ a {
 }
 
 body {
-  min-width: 100vw;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-family: "Open Sans", sans-serif;
 }
-
 .content-wrapper {
-  width: 30vw;
+  width: 80%;
   height: auto;
-  /* border: 1px solid red; */
 }
+
 .card {
   width: 100%;
   border: 1px solid rgba(80, 79, 79, 0.21);
@@ -36,66 +34,69 @@ body {
   box-shadow: 0 0 0 1px rgba(80, 79, 79, 0.1);
   padding: 2.5rem;
 }
+
 .card-header {
-  height: 100px;
-  /* border: 1px solid orange; */
+  height: 8em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.2em;
 }
+
 img {
-  margin-bottom: 0.78rem;
+  width: 7em;
+  margin-bottom: 1em;
 }
 h2 {
-  font-size: 1.65rem;
+  font-size: 1.6em;
   font-weight: 400;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
 }
 .go-gmail {
-  font-size: 1.03rem;
+  font-size: 1em;
 }
+
 form {
   display: flex;
   flex-direction: column;
 }
 input {
-  padding: 1rem 0.85rem;
+  font-size: 1.2em;
+  padding: 0.9em 0.8em;
   border-radius: 5px;
   outline: none;
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1em;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: transparent;
 }
+
 .forget {
-  font-size: 0.87rem;
+  font-size: 0.95em;
 }
 .guest-info {
   width: 100%;
-  /* border: 1px solid red; */
-  margin-top: 2.5rem;
+  margin-top: 2.5em;
   color: rgba(0, 0, 0, 0.55);
-  font-size: 0.879rem;
-  line-height: 1.3rem;
+  font-size: 1em;
+  line-height: 1.5em;
   font-weight: 600;
 }
+
 .buttons-wrapper {
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid red; */
-  margin-top: 2rem;
+  margin-top: 3em;
 }
 .btn {
-  padding: 0.75rem 1.6rem;
+  font-size: 1em;
+  padding: 1.1em 2.4em;
   cursor: pointer;
   outline: none;
   border: none;
   color: var(--ancleColor);
   border-radius: 4px;
   font-weight: 600;
-  font-size: 1rem;
 }
 .primary {
   background: var(--ancleColor);
@@ -115,19 +116,19 @@ input {
   background: rgb(242, 247, 253);
   transition: background 0.5s;
 }
+
 .footer {
   display: flex;
-  height: 3rem;
+  height: 4em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.7em;
 }
 .other_options {
-  width: 15rem;
-  /* border: 1px solid red; */
+  width: 22em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .footer a {
   color: rgba(0, 0, 0, 0.55);
@@ -135,7 +136,7 @@ input {
 i {
   color: rgba(0, 0, 0, 0.75);
 }
-
+/*
 .alert {
   width: 90%;
   height: 200px;
@@ -165,4 +166,4 @@ i {
 .alert .fa-user-check {
   color: white;
   font-size: 2rem;
-}
+} */
