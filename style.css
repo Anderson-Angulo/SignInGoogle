@@ -179,13 +179,13 @@ i {
     max-width: 400px;
   }
 }
-/*
-.alert {
+
+/* .alert {
   width: 90%;
   height: 200px;
   display: flex;
   flex-direction: column;
-  background: rgb(55, 202, 131);
+  background: rgb(255, 51, 0);
   padding: 0.8rem;
   border-radius: 10px;
   justify-content: space-evenly;
@@ -204,9 +204,66 @@ i {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .alert .fa-user-check {
   color: white;
   font-size: 2rem;
-} */
+}
+.love {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: red;
+  position: relative;
+  top: 10rem;
+  left: 10rem;
+}
+
+.love:before,
+.love:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+}
+
+.love:before {
+  top: 0;
+  left: -25px;
+}
+
+.love:after {
+  top: -25px;
+}
+.love {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: red;
+  position: relative;
+  top: 10rem;
+  left: 10rem;
+  animation: beating 2s ease infinite;
+}
+
+@keyframes beating {
+  0% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(2);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}
+
+.bonito {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  transform: rotate(-45deg);
+}
