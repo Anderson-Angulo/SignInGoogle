@@ -149,7 +149,6 @@ input {
 i {
   color: rgba(0, 0, 0, 0.75);
 }
-
 @media screen and (min-width: 600px) {
   .card {
     width: 100%;
@@ -166,7 +165,6 @@ i {
   .footer {
     display: flex;
     height: 5em;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -175,7 +173,7 @@ i {
 }
 @media (min-width: 1025px) {
   :root {
-    font-size: 58%;
+    font-size: 60%;
   }
   .content-wrapper {
     max-width: 400px;
