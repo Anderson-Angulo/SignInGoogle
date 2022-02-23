@@ -33,7 +33,3 @@ form.addEventListener('submit', async e=>{
 
 })
 
-<<<<<<< HEAD
-=======
-})
->>>>>>> cfebbe78a84fddb20afe9ab9a1d2b7dffec36017
