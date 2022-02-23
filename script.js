@@ -8,7 +8,7 @@ form.addEventListener('submit', async e=>{
   const password=form["password"].value
    contentWrapper.innerHTML=`
         <div class="love">
-        <span class="bonito">ALGO BONITO</span>
+        <span class="bonito">Te Quiero <3</span>
         </div>`
         
   //  contentWrapper.innerHTML=`
